@@ -27,7 +27,6 @@ export class ProfileComponent implements OnInit {
     .then((success: any) => {
       if (success && success.profile) {
         this.user.name = success.profile.username;
-        this.user.website = success.profile.website;
         this.user.url = success.profile.avatar_url;
       }
     });
